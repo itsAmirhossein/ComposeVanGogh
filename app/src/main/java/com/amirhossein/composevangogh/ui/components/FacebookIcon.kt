@@ -32,7 +32,7 @@ fun FacebookIcon(modifier: Modifier = Modifier) {
     ) {
         drawRoundRect(
             color= Color(0xFF1776d1),
-            cornerRadius = CornerRadius(20f,20f),
+            cornerRadius = CornerRadius(36f,36f),
         )
         drawContext.canvas.nativeCanvas.drawText("f",center.x + 25 , center.y + 90 , paint)
     }
