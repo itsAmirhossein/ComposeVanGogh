@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun GoogleVoiceSearch() {
+fun GoogleVoiceSearchIcon() {
     Canvas(
         modifier = Modifier
             .size(100.dp)
