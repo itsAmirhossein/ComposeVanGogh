@@ -17,7 +17,7 @@ fun GoogleIcon(modifier: Modifier = Modifier) {
     Canvas(
         modifier = Modifier
             .size(100.dp)
-            .padding(20.dp)
+            .padding(16.dp)
             .then(modifier)
     ){
         val width = this.size.width
@@ -40,7 +40,7 @@ fun GoogleIcon(modifier: Modifier = Modifier) {
 
         drawRect(
             color = Color(0xFF4384f3),
-            size = Size(width * .56f, 20f),
+            size = Size(width * .55f, 20f),
             topLeft = Offset(width * .55f, height * .45f)
         )
 
