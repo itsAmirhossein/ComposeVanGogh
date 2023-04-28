@@ -5,10 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.amirhossein.composevangogh.ui.components.FacebookIcon
-import com.amirhossein.composevangogh.ui.components.GoogleIcon
-import com.amirhossein.composevangogh.ui.components.InstagramIcons
-import com.amirhossein.composevangogh.ui.components.MessengerIcon
+import com.amirhossein.composevangogh.ui.components.*
 
 @Composable
 fun HomeScreen() {
@@ -17,5 +14,6 @@ fun HomeScreen() {
         FacebookIcon()
         MessengerIcon()
         GoogleIcon()
+        GooglePhotosIcon()
     }
 }
