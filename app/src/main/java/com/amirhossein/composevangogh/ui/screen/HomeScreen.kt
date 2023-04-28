@@ -16,5 +16,6 @@ fun HomeScreen() {
         GoogleIcon()
         GooglePhotosIcon()
         YoutubeIcon()
+        GoogleVoiceSearch()
     }
 }
