@@ -31,6 +31,7 @@ fun HomeScreen() {
         ) {
             GoogleVoiceSearchIcon()
             StackOverFlowIcon()
+            SpotifyIcon()
         }
     }
 }
