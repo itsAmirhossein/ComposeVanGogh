@@ -15,5 +15,6 @@ fun HomeScreen() {
         MessengerIcon()
         GoogleIcon()
         GooglePhotosIcon()
+        YoutubeIcon()
     }
 }
