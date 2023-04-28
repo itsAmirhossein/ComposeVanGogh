@@ -6,14 +6,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.amirhossein.composevangogh.ui.components.FacebookIcon
+import com.amirhossein.composevangogh.ui.components.GoogleIcon
 import com.amirhossein.composevangogh.ui.components.InstagramIcons
 import com.amirhossein.composevangogh.ui.components.MessengerIcon
 
 @Composable
 fun HomeScreen() {
-    Row(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = Modifier.fillMaxSize()) {
         InstagramIcons()
         FacebookIcon()
         MessengerIcon()
+        GoogleIcon()
     }
 }
