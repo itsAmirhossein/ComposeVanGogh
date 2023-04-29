@@ -26,16 +26,16 @@ fun InstagramIcon(modifier: Modifier = Modifier) {
         drawRoundRect(
             brush = Brush.linearGradient(instagramColors),
             cornerRadius = CornerRadius(40f,40f),
-            style = Stroke(width = 8f, cap = StrokeCap.Round),
+            style = Stroke(width = 10f, cap = StrokeCap.Round),
         )
         drawCircle(
             brush = Brush.linearGradient(instagramColors),
             radius = 28f,
-            style = Stroke(width = 8f, cap = StrokeCap.Round),
+            style = Stroke(width = 10f, cap = StrokeCap.Round),
         )
         drawCircle(
             brush = Brush.linearGradient(instagramColors),
-            radius = 8f,
+            radius = 10f,
             center = Offset(x = this.size.width * 0.8f , y = this.size.height * 0.2f)
         )
     }

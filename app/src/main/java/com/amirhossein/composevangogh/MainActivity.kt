@@ -21,30 +21,23 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.amirhossein.composevangogh.ui.screen.HomeScreen
 import com.amirhossein.composevangogh.ui.theme.ComposeVanGoghTheme
 import com.amirhossein.composevangogh.utils.Constant
+import com.amirhossein.composevangogh.utils.changeStatusBarColor
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            changeStatusBarColor(color = Color.White)
             ComposeVanGoghTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = Color.Black.copy(alpha = .03f)
                 ) {
                     Box(
                         modifier = Modifier
                             .fillMaxSize()
                     )
                     {
-                        Image(
-                            painter = painterResource(id = R.drawable.starry_night),
-                            contentDescription = "Background Image",
-                            contentScale = ContentScale.FillBounds,
-                            modifier = Modifier
-                                .matchParentSize()
-                                .background(color = Color.Black)
-                                .alpha(alpha = .55f)
-                        )
                         HomeScreen(
                             items = Constant.homeCards
                         )
@@ -61,7 +54,7 @@ fun DefaultPreview() {
     ComposeVanGoghTheme {
         Surface(
             modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
+            color = Color.Black.copy(alpha = .05f)
         ) {
             Box(modifier = Modifier.fillMaxSize())
             {
