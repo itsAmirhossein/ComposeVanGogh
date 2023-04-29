@@ -4,3 +4,9 @@ I was following the updates to Compose UI from some time and this time decided t
 
 ## 📱Screenshot
 <img src="https://github.com/itsAmirhossein/ComposeVanGogh/blob/master/screenshots/Screenshot.png" height="649" width="300">
+
+## <br/><br/>Built With 🛠
+- [Kotlin](https://kotlinlang.org/) 
+- [Jetpack Compose](https://developer.android.com/jetpack/compose) 
+- [Jetpack Compose Canvas Api](https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Canvas)
+- [Material Components for Android](https://github.com/material-components/material-components-android) 
