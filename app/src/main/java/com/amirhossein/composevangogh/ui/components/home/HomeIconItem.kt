@@ -1,4 +1,4 @@
-package com.amirhossein.composevangogh.ui.components.icons
+package com.amirhossein.composevangogh.ui.components.home
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.amirhossein.composevangogh.model.Icon
-import com.amirhossein.composevangogh.ui.components.InstagramIcon
+import com.amirhossein.composevangogh.ui.components.icons.international_companies_icons.InstagramIcon
 
 @Composable
 fun HomeIconItem(icon: Icon, modifier: Modifier = Modifier, textSize: TextUnit = 15.sp) {

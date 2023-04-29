@@ -1,4 +1,4 @@
-package com.amirhossein.composevangogh.ui.components
+package com.amirhossein.composevangogh.ui.components.icons.international_companies_icons
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.padding
@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 fun GoogleIcon(modifier: Modifier = Modifier) {
     Canvas(
         modifier = Modifier
-            .size(100.dp)
+            .size(80.dp)
             .padding(16.dp)
             .then(modifier)
     ){
@@ -40,7 +40,7 @@ fun GoogleIcon(modifier: Modifier = Modifier) {
 
         drawRect(
             color = Color(0xFF4384f3),
-            size = Size(width * .55f, 20f),
+            size = Size(width * .596f, 20f),
             topLeft = Offset(width * .55f, height * .45f)
         )
 

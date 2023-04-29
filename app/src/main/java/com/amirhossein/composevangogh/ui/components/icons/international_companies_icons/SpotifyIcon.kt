@@ -1,4 +1,4 @@
-package com.amirhossein.composevangogh.ui.components
+package com.amirhossein.composevangogh.ui.components.icons.international_companies_icons
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.padding
@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 fun SpotifyIcon() {
     Canvas(
         modifier = Modifier
-            .size(100.dp)
+            .size(80.dp)
             .padding(16.dp)
     ) {
         val width = size.width

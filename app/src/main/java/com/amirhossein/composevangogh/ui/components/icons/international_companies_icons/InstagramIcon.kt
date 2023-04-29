@@ -1,4 +1,4 @@
-package com.amirhossein.composevangogh.ui.components
+package com.amirhossein.composevangogh.ui.components.icons.international_companies_icons
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.padding
@@ -19,23 +19,23 @@ fun InstagramIcon(modifier: Modifier = Modifier) {
     Canvas(
         modifier =
         Modifier
-            .size(100.dp)
+            .size(80.dp)
             .padding(16.dp)
             .then(modifier)
     ) {
         drawRoundRect(
             brush = Brush.linearGradient(instagramColors),
-            cornerRadius = CornerRadius(60f,60f),
-            style = Stroke(width = 15f, cap = StrokeCap.Round),
+            cornerRadius = CornerRadius(40f,40f),
+            style = Stroke(width = 8f, cap = StrokeCap.Round),
         )
         drawCircle(
             brush = Brush.linearGradient(instagramColors),
-            radius = 45f,
-            style = Stroke(width = 15f, cap = StrokeCap.Round),
+            radius = 28f,
+            style = Stroke(width = 8f, cap = StrokeCap.Round),
         )
         drawCircle(
             brush = Brush.linearGradient(instagramColors),
-            radius = 13f,
+            radius = 8f,
             center = Offset(x = this.size.width * 0.8f , y = this.size.height * 0.2f)
         )
     }

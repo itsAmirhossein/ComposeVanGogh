@@ -1,5 +1,6 @@
 package com.amirhossein.composevangogh.ui.components.home
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Divider
@@ -23,6 +24,7 @@ import com.amirhossein.composevangogh.R
 @Composable
 fun HomeHeader(
     modifier: Modifier = Modifier,
+    @DrawableRes iconId: Int,
     iconSize: Dp = 24.dp,
     title: String,
     textSize: TextUnit = 15.sp,
@@ -43,7 +45,7 @@ fun HomeHeader(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                painter = painterResource(id = R.drawable.ic_international),
+                painter = painterResource(id = iconId),
                 contentDescription = "$title Icon",
                 modifier = Modifier
                     .size(iconSize)
@@ -66,4 +68,4 @@ fun HomeHeader(
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() = HomeHeader(title = "International", textSize = 20.sp)
+fun DefaultPreview() = HomeHeader(title = "International", textSize = 20.sp, iconId = R.drawable.ic_international)

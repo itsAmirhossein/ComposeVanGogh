@@ -1,10 +1,13 @@
 package com.amirhossein.composevangogh.utils
 
+import com.amirhossein.composevangogh.R
+import com.amirhossein.composevangogh.model.HomeCardItem
 import com.amirhossein.composevangogh.model.Icon
-import com.amirhossein.composevangogh.ui.components.*
+import com.amirhossein.composevangogh.ui.components.icons.international_companies_icons.*
+import com.amirhossein.composevangogh.ui.components.icons.iranian_compamies_icons.*
 
 object Constant {
-    val internationalIcons = listOf(
+    private val internationalIcons = listOf(
         Icon(
             title = "Instagram",
             action = { InstagramIcon() },
@@ -28,7 +31,7 @@ object Constant {
         Icon(
             title = "Google Photo",
             action = { GooglePhotosIcon() },
-            url = "https://photos.google.com/login"
+            url = "https://photos.google.com/"
         ),
         Icon(
             title = "Youtube",
@@ -50,5 +53,46 @@ object Constant {
             action = { SpotifyIcon() },
             url = "https://open.spotify.com/"
         ),
+    )
+
+    private val iranianIcons = listOf(
+        Icon(
+            title = "Snapp",
+            action = { SnappIcon() },
+            url = "https://snapp.ir/"
+        ),
+        Icon(
+            title = "tapsi",
+            action = { TapsiIcon() },
+            url = "https://tapsi.ir/"
+        ),
+        Icon(
+            title = "DigiKala",
+            action = { DigikalaIcon() },
+            url = "https://www.digikala.com/"
+        ),
+        Icon(
+            title = "Anten",
+            action = { AntenIcon() },
+            url = "https://www.anten.ir/"
+        ),
+        Icon(
+            title = "Cafe Bazaar",
+            action = { CafeBazaarIcon() },
+            url = "https://cafebazaar.ir/app?l=en"
+        ),
+    )
+
+    val homeCards = listOf(
+        HomeCardItem(
+            headerTitle = "International",
+            headerIconId = R.drawable.ic_international,
+            items = internationalIcons,
+        ),
+        HomeCardItem(
+            headerTitle = "Iranian",
+            headerIconId = R.drawable.ic_iran,
+            items = iranianIcons,
+        )
     )
 }

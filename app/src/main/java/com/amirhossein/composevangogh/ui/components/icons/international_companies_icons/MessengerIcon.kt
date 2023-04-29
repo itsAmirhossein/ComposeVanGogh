@@ -1,4 +1,4 @@
-package com.amirhossein.composevangogh.ui.components
+package com.amirhossein.composevangogh.ui.components.icons.international_companies_icons
 
 
 import androidx.compose.foundation.Canvas
@@ -19,7 +19,7 @@ fun MessengerIcon() {
     val colors = listOf(Color(0xFF02b8f9), Color(0xFF0277fe))
     Canvas(
         modifier = Modifier
-            .size(100.dp)
+            .size(80.dp)
             .padding(16.dp),
     ) {
         val trianglePath = Path().let { path ->
